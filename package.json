@@ -1,0 +1,57 @@
+{
+  "name": "valor-fiscal",
+  "version": "1.0.0",
+  "description": "Sistema inteligente de cálculo de tributos brasileiros com IA",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "build": "npm run build:frontend && npm run build:backend",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && npm run build",
+    "start": "cd backend && npm start",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "migrate": "cd backend && npm run migrate",
+    "seed": "cd backend && npm run seed",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "impostos",
+    "tributos",
+    "simples-nacional",
+    "mei",
+    "lucro-presumido",
+    "contabilidade",
+    "brasil",
+    "ia",
+    "calculadora-fiscal"
+  ],
+  "author": "David De Cunto <contato@notecraft.com.br>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Froggerr10/valor-fiscal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Froggerr10/valor-fiscal/issues"
+  },
+  "homepage": "https://github.com/Froggerr10/valor-fiscal#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.5",
+    "@types/node": "^20.6.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0",
+    "concurrently": "^8.2.1",
+    "eslint": "^8.49.0",
+    "jest": "^29.7.0",
+    "typescript": "^5.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
